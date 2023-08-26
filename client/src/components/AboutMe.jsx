@@ -3,9 +3,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function AboutMe() {
-  const aboutMeHeaderRef = useRef();
-  const aboutMePRef = useRef();
   useEffect(() => {
+    const aboutMeHeaderRef = useRef();
+    const aboutMePRef = useRef();
     gsap.registerPlugin(ScrollTrigger);
     gsap.fromTo(
       aboutMeHeaderRef.current,
