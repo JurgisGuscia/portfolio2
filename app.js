@@ -6,6 +6,10 @@ const app = express();
 var sslRedirect = require("heroku-ssl-redirect").default;
 const Mailjet = require("node-mailjet");
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 app.listen(process.env.PORT || 3000, () => {
   console.log("server listening");
 });
