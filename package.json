@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.16.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
@@ -10,6 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "body-parser": "^1.20.2",
+    "concurrently": "^8.2.1",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "gsap": "^3.12.2",
@@ -23,13 +27,8 @@
     "web-vitals": "^2.1.4",
     "yarn": "^1.22.19"
   },
-  "engines": {
-    "node": "8.1.1",
-    "npm": "5.0.3"
-    },
   "scripts": {
-    "start": "node app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
