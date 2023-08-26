@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { React, useRef } from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Home from "./components/Home.jsx";
+import AboutMe from "./components/AboutMe.jsx";
+import Skills from "./components/Skills.jsx";
+import Projects from "./components/Projects.jsx";
+import Connect from "./components/Connect.jsx";
+import Control from "./components/Control.jsx";
+import PersonalInfo from "./components/PersonalInfo.jsx";
+import { gsap } from "gsap";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div className="App">
+    <PersonalInfo />
+    <Control />
+    <Home />
+    <AboutMe />
+    <Skills />
+    <Projects />
+    <Connect />
+  </div>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
