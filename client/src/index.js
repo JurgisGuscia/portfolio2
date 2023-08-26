@@ -9,6 +9,8 @@ import Connect from "./components/Connect.jsx";
 import Control from "./components/Control.jsx";
 import PersonalInfo from "./components/PersonalInfo.jsx";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
