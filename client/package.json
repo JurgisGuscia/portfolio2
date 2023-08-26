@@ -30,7 +30,7 @@
     "scripts": {    
       "client-install": "npm install --prefix client",
       "build": "react-scripts build",
-      "start": "node app.js",
+      "start": "react-scripts --openssl-legacy-provider start",
       "server": "nodemon app.js",
       "client": "npm start --prefix client",
       "dev": "concurrently \"npm run server\" \"npm run client\"",
