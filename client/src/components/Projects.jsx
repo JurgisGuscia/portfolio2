@@ -54,7 +54,8 @@ export default function Projects() {
           </h2>
           <p>
             Merchandise management system for tracking codes, names, amounts,
-            dates and origins of returned merchandise
+            dates and origins of returned merchandise.<br></br>
+            You can login with: test/test.
           </p>
 
           <h3>Used technologies:</h3>
