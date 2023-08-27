@@ -23,6 +23,7 @@ const mailjet = new Mailjet({
 });
 
 const root = require("path").join(__dirname, "client", "build");
+
 app.use(express.static(root));
 
 app.get("*", (req, res) => {
